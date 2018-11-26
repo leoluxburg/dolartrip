@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dolartrip</title>
-    <%= csrf_meta_tags %>
-      <meta charset="utf-8">
+<head>
+  <title>Doraltrip</title>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="DoralTrip" content="FlyAgency">
+  <%= render 'application/favicon' %>
+  <meta property="og:title" content="DoralTrip">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:description" content="FlyAgency">
+  <meta property="og:site_name" content="Le Wagon"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <%= yield %>
+</body>
 </html>
